@@ -1,0 +1,109 @@
+/* Small phone view */
+nav{
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: #12aaeb;
+}
+#navigation{
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+}
+#navigation li:first-child{
+    display: block;
+}
+#navigation li{
+    display: none;
+}
+#navigation a{
+    display: block;
+    padding: .75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+#navigation a:hover, #navigation a.active:hover{
+    color: white;
+    background-color: black;
+}
+#navigation a.active{
+    background-color: rgba(0,0,0,.55);
+    color: white;
+}
+#navigation.responsive li{
+    display: block;
+}
+/* Media query for medium views */
+@media only screen and (min-width: 34.5em) {
+    nav{
+        max-width: 100%;
+    }
+    #navigation{
+        grid-template-columns: repeat(4,auto);
+    }
+    #navigation li{
+        display: block; /*change state in small view*/
+    
+    }
+    #navigation a{
+        text-align: center;
+    }
+    #navigation li:first-child{
+        display: none;
+    }
+}
+/*Media query for very big screens*/
+@media only screen and (min-width:54.5em) {
+    #navigation{
+        width: 800px;
+        margin: 16px auto;
+    }
+    
+}
+
+/* CSS For the header */
+header{
+    text-align: center;
+    align-items: center;
+}
+
+/* CSS For the color palette in the table */
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+    color: whitesmoke;
+  }
+.colors th {
+    background-color: #999;
+  }
+.colors td{
+    width: 25%;
+    height: 3em;
+  }
+.primary {
+    background-color: #1A4761;
+  }
+.secondary {
+    background-color: white;
+    color: #100509;
+  }
+.accent1 {
+    background-color: #100509;
+  }
+.accent2{
+    background-color: #F5B82E;
+  }
+
+/* CSS for text typography */
+h3{
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+h4{
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+}
