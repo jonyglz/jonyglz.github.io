@@ -1,0 +1,179 @@
+/* Small phone view */
+nav{
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: #100509;
+    color: white;
+    padding: 0;
+}
+#navigation{
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+    margin: 0;
+}
+#navigation li:first-child{
+    display: block;
+}
+#navigation li{
+    display: none;
+}
+#navigation a{
+    display: block;
+    padding: .75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+#navigation a:hover, #navigation a.active:hover{
+    color: #100509;
+    background-color: #F5B82E;
+}
+#navigation a.active{
+    background-color: #F5B82E;
+    color: #100509;
+}
+#navigation.responsive li{
+    display: block;
+}
+/* CSS For the header */
+header{
+    text-align: center;
+    background-color: #1A4761;
+    color: white;
+    margin: 0 auto;
+    max-width: 360px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+header img{
+    max-width: 150px;
+}
+header h3{
+    display: none;
+}
+main h1{
+    text-align: center;
+    margin: 0;
+}
+.heroImg{
+    display: none;
+}
+.content{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed black;
+    max-width: 360px;
+}
+footer{
+    text-align: center;
+    background-color: #1A4761;
+    color: white;
+    margin: 0 auto;
+    max-width: 360px;
+    padding: 10px;
+}
+
+/* CSS For the color palette in the table */
+/* .colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+    color: whitesmoke;
+  }
+.colors th {
+    background-color: #999;
+  }
+.colors td{
+    width: 25%;
+    height: 3em;
+  }
+.primary {
+    background-color: #1A4761;
+  }
+.secondary {
+    background-color: white;
+    color: #100509;
+  }
+.accent1 {
+    background-color: #100509;
+  }
+.accent2{
+    background-color: #F5B82E;
+  } */
+
+/* CSS for text typography */
+h1{
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+h3{
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+}
+
+/* Media query for medium views */
+@media only screen and (min-width: 34.5em) {
+    header{
+        max-width: 100%;
+        margin: 0 auto;
+        grid-template-columns: 1fr 2fr ;
+    }
+    .logo{
+        align-self: center;   
+    }
+    .title-motto{
+        padding-top: 50px;
+    }
+    header h1 {
+        margin: 0;
+    }
+    header h3{
+        display: block;
+        margin: 0;
+    }
+    nav{
+        max-width: 100%;
+    }
+    #navigation{
+        grid-template-columns: repeat(6,auto);
+    }
+    #navigation li{
+        display: block; /*change state in small view*/
+    
+    }
+    #navigation a{
+        text-align: center;
+    }
+    #navigation li:first-child{
+        display: none;
+    }
+    main{
+        margin: 0 auto;
+    }
+    .heroImg{
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+/*Media query for very big screens*/
+@media only screen and (min-width:54.5em) {
+    header{
+        width: 800px;
+        margin: 0 auto;
+    }
+    #navigation{
+        width: 800px;
+        margin: 16px auto;
+    }
+    .heroImg{
+        width: 800px;
+    }
+
+    
+}
+
