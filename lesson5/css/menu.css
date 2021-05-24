@@ -192,6 +192,9 @@ h3{
         width: 150px;
         float: right;
     }
+    footer{
+        max-width: 100%;
+    }
     
 }
 /*Media query for very big screens*/
