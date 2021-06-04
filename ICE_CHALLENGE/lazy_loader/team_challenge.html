@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loader-ICE Challenge</title>
+    <style>
+        /* img {
+            border: 1px solid red;
+            width: 100%;
+            height: 100%;
+            background-color: lightgray;
+        } */
+
+/* -->*/.loading { 
+            background-color: lightgray;
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+        }
+
+        .placeholder::before {
+
+            content: "";
+            display: block;
+            position: absolute;
+            left: -400px;
+            top: 0;
+            height: 100%;
+            width: 400px;
+            background: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+            animation: load 3s;
+            z-index: 50;
+        }
+
+        .placeholder {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes load {
+            0% {
+                left: -400px;
+            }
+
+            100% {
+                left: 100%;
+            }
+/* -->*/}
+
+        main {
+            width: 375px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(6, .5fr);
+            gap: 10px;
+            margin: 0 auto;
+        }
+
+        #placeholder-loading1 {
+            grid-column: 1;
+            grid-row: 1/3;
+            width: 100%;
+            height: 100%;
+            justify-self: center;
+            align-self: center;
+        }
+
+        #placeholder-loading2 {
+            grid-column: 2;
+            grid-row: 1;
+            width: 100%;
+            height: 100%;
+            justify-self: center;
+            align-self: center;
+        }
+
+        #placeholder-loading3 {
+            grid-column: 3;
+            grid-row: 1;
+            width: 100%;
+            height: 100%;
+            justify-self: center;
+            align-self: center;
+        }
+
+        #placeholder-loading4 {
+            grid-column: 2;
+            grid-row: 2;
+            width: 100%;
+            height: 100%;
+            justify-self: center;
+            align-self: center;
+        }
+
+        #placeholder-loading5 {
+            grid-column: 3;
+            grid-row: 2/4;
+            width: 100%;
+            height: 100%;
+            justify-self: center;
+            align-self: center;
+        }
+
+        #placeholder-loading6 {
+            grid-column: 1/3;
+            grid-row: 3/5;
+            width: 100%;
+            height: 100%;
+            justify-self: center;
+            align-self: center;
+        }
+
+        #placeholder-loading7 {
+            grid-column: 3;
+            grid-row: 4;
+            width: 100%;
+            height: 100%;
+            justify-self: center;
+            align-self: center;
+        }
+
+        #placeholder-loading8 {
+            grid-column: 1;
+            grid-row: 5;
+            width: 100%;
+            height: 100%;
+            justify-self: center;
+            align-self: center;
+        }
+
+        #placeholder-loading9 {
+            grid-column: 2/4;
+            grid-row: 5/7;
+            width: 100%;
+            height: 100%;
+            justify-self: center;
+            align-self: center;
+        }
+
+        #placeholder-loading10 {
+            grid-column: 1;
+            grid-row: 6;
+            width: 100%;
+            height: 100%;
+            justify-self: center;
+            align-self: center;
+        }
+
+        @media only screen and (min-width: 768px) {
+            main {
+                width: 800px;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            main {
+                width: 1000px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="placeholder" id="placeholder-loading1"><img src="http://unsplash.it/400" alt="" class="loading" loading="lazy"></div>
+        <div class="placeholder" id="placeholder-loading2"><img src="http://unsplash.it/401" alt="" class="loading" loading="lazy"></div>
+        <div class="placeholder" id="placeholder-loading3"><img src="http://unsplash.it/402" alt="" class="loading" loading="lazy"></div>
+        <div class="placeholder" id="placeholder-loading4"><img src="http://unsplash.it/403" alt="" class="loading" loading="lazy"></div>
+        <div class="placeholder" id="placeholder-loading5"><img src="http://unsplash.it/404" alt="" class="loading" loading="lazy"></div>
+        <div class="placeholder" id="placeholder-loading6"><img src="http://unsplash.it/405" alt="" class="loading" loading="lazy"></div>
+        <div class="placeholder" id="placeholder-loading7"><img src="http://unsplash.it/406" alt="" class="loading" loading="lazy"></div>
+        <div class="placeholder" id="placeholder-loading8"><img src="http://unsplash.it/407" alt="" class="loading" loading="lazy"></div>
+        <div class="placeholder" id="placeholder-loading9"><img src="http://unsplash.it/408" alt="" class="loading" loading="lazy"></div>
+        <div class="placeholder" id="placeholder-loading10"><img src="http://unsplash.it/409" alt="" class="loading" loading="lazy"></div>
+    </main>
+</body>
+
+</html>
