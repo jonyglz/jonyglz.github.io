@@ -147,6 +147,22 @@ h3 {
     box-shadow: 0 0 50px #333;
 }
 
+/* CSS FOR INDEX SITE CARDS IN SMALL VIEW */
+.index_card{
+    width: 80%;
+    background-color:#F5B82E ;
+    text-align: center;
+    border: solid 1px #333;
+    margin: 2px auto;
+}
+.index_card img{
+    max-width: 35%;
+    box-shadow: 1px 1px 7px 3px #1A4761;
+}
+.index_card h2,.index_card p,.index_card h4{
+    margin: 5px;
+}
+
 /* Media query for medium views */
 @media only screen and (min-width: 34.5em) {
     #header_test {
@@ -287,6 +303,36 @@ h3 {
         gap: 10px;
         margin: 0 auto;
     }
+    /* CSS FOR THE ALTERNATING CARDS IN INDEX */
+    .cards {
+        max-width: 600px;
+        margin: .5rem auto;
+        /* border:1px solid #bbb;
+        background-color: #eee; */
+    }
+    
+    .index_card {
+      display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .index_card:nth-child(odd) img {
+        grid-column: 1;
+    }
+    
+    .index_card:nth-child(odd) h2,.index_card:nth-child(odd) p,.index_card:nth-child(odd) h4 {
+        grid-column: 2;
+        /* grid-row: 1; */
+    }
+
+    .index_card:nth-child(even) h2,.index_card:nth-child(even) p,.index_card:nth-child(even) h4 {
+        grid-column: 1;
+        /* grid-row: 1; */
+    }
+    
+    .index_card img {width: 100%; height: auto;padding:0;}
+    /* .data {background-color:#000; color:#fff;} */
+    p {padding: .75rem;}
 
 }
 
