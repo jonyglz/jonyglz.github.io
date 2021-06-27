@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Guardian</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/menu.js"></script>
+    <link rel="shortcut icon" href="images/twguardian.png" type="image/gif">
+</head>
+
+<body>
+    <header>
+        <div id="header_test">
+            <div class="logo">
+                <img src="images/twguardian.png" alt="twguardian.logo">
+            </div>
+            <div class="title-motto">
+                <h1>The Weather Guardian</h1>
+                <h3>Here to save your day</h3>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+    </nav>
+    <main>
+        <h1>Preston Idaho</h1>
+        <section class='heroImg'>
+            <img class="imgh" src="images/preston-idaho-area-chamber-of-commerce.jpg" alt="Hero Image">
+            <div class="summarytxt">
+                <h2>Weather Summary</h2>
+                <h3>Currently: <span id="currently"></span><br>High: <span id="high"></span>&#176;F <br>Wind Chill: &#176;F<br>Humidity: <span id="humidity"></span>%<br>Wind speed: <span id="wind_speed"></span> mph</h3>
+            </div>
+        </section>
+        <section id='image2'>
+            <img class='img1' src='images/pancakes.png'>
+            <div class='overlay2'>
+                <h2>Come join us this Saturday</h2>
+            </div>
+            <div class="learning">
+                <h2>Starting at 9am</h2>
+            </div>
+        </section>
+        <div class="artichoke">
+            <section class="content">
+                <h2>Weather Summary</h2>
+            </section>
+            <section class="content">
+                <h2>5 Day Forecast</h2>
+                <div class="forecast_icons">
+                    <img class="wicon" src="" alt="" id="icon1">
+                    <img class="wicon" src="" alt="" id="icon2">
+                    <img class="wicon" src="" alt="" id="icon3">
+                    <img class="wicon" src="" alt="" id="icon4">
+                    <img class="wicon" src="" alt="" id="icon5">
+                </div>
+            </section>
+            <section class="content">
+                <h2>Weather factors are contributing to rise in price of corn</h2>
+                <p class="corn"><img class="corn_image" src="images/corn.jpg" alt="corn">The price of corn in the United
+                    States has been increasing this year and is now approaching record highs. As of Monday, according to
+                    The Wall Street Journal, corn prices are up 50%, with the cost of a bushel at $7.73, and prices are
+                    closing in on highs not seen since 2012 when drought decimated crops across the Midwest and sent
+                    prices soaring to $8.31 a bushel, the Journal reported.</p>
+
+            </section>
+            <section class="content">
+                <h2>Contact Information</h2>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p class="legal">&copy; The Weather Guardian | Jonathan Gonzalez | Idaho </p>
+        <p class="highlight"><span id="lastupdated"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Merriweather'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
