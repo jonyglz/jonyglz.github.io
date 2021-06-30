@@ -1,0 +1,437 @@
+/* Small phone view */
+nav {
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: #100509;
+    color: white;
+    padding: 0;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+    margin: 0;
+}
+
+#navigation li:first-child {
+    display: block;
+}
+
+#navigation li {
+    display: none;
+}
+
+#navigation a {
+    display: block;
+    padding: .75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+#navigation a:hover,
+#navigation a.active:hover {
+    color: #100509;
+    background-color: #F5B82E;
+}
+
+#navigation a.active {
+    background-color: #F5B82E;
+    color: #100509;
+}
+
+#navigation.responsive li {
+    display: block;
+}
+
+/* CSS For the header */
+#header_test {
+    text-align: center;
+    background-color: #1A4761;
+    color: white;
+    margin: 0 auto;
+    max-width: 360px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+header img {
+    max-width: 150px;
+}
+
+header h3 {
+    display: none;
+}
+
+main h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.heroImg {
+    display: none;
+}
+
+.content {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed black;
+    max-width: 360px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.forecast_icons {
+    display: none;
+}
+
+.corn,
+.corn_image {
+    display: none;
+}
+
+/* CSS for the footer */
+footer {
+    text-align: center;
+    background-color: #1A4761;
+    color: white;
+    margin: 0 auto;
+    max-width: 360px;
+    padding: 10px;
+}
+
+/* CSS for text typography */
+h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+}
+
+/* Gallery content for small views */
+#weathergallery {
+    max-width: 360px;
+    text-align: left;
+    margin: 0 auto;
+    color: #1A4761;
+}
+
+#gallerycontainer {
+    max-width: 360px;
+    display: grid;
+    grid-template-columns: 360px;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#gallerycontainer figure {
+    margin: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.galleryphoto {
+    background-color: lightgray;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+}
+
+.galleryphoto:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+/* CSS FOR INDEX SITE CARDS IN SMALL VIEW */
+.index_card{
+    width: 80%;
+    background-color:#F5B82E ;
+    text-align: center;
+    border: solid 1px #333;
+    margin: 2px auto;
+}
+.index_card img{
+    width: 35%;
+    box-shadow: 1px 1px 7px 3px #1A4761;
+}
+.index_card h2,.index_card p,.index_card h4{
+    margin: 5px;
+}
+
+/* CSS for the form */
+form{
+    margin-bottom: 16px;
+}
+
+/* Media query for medium views */
+@media only screen and (min-width: 34.5em) {
+    #header_test {
+        max-width: 100%;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .logo {
+        align-self: center;
+    }
+
+    .title-motto {
+        padding-top: 50px;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    header h3 {
+        display: block;
+        margin: 0;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    #navigation {
+        grid-template-columns: repeat(6, auto);
+    }
+
+    #navigation li {
+        display: block;
+        /*change state in small view*/
+
+    }
+
+    #navigation a {
+        text-align: center;
+    }
+
+    #navigation li:first-child {
+        display: none;
+    }
+
+    main {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    main h1 {
+        text-align: left;
+    }
+
+    .heroImg {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 80px 80px 80px;
+    }
+
+    .imgh {
+        grid-row: 1/-1;
+        grid-column: 1/4;
+        width: 100%;
+        height: 240px;
+        z-index: 6;
+    }
+
+    .summarytxt {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        z-index: 13;
+        align-self: center;
+        justify-self: center;
+        background-color: whitesmoke;
+        border-radius: 30px;
+        text-align: center;
+        margin: 0 30px;
+        opacity: .7;
+    }
+
+    .artichoke section:first-child {
+        display: none;
+    }
+
+    .artichoke section:last-child {
+        display: none;
+    }
+
+    .content {
+        margin: 16 auto;
+        max-width: 100%;
+    }
+
+    .wicon {
+        width: 80px;
+        height: 80px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .forecast_icons {
+        display: block;
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    #span5, #span4, #span3, #span2, #span1 {
+        grid-row: 2;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .corn,
+    .corn_image {
+        display: block;
+    }
+
+    .corn_image {
+        width: 150px;
+        float: right;
+    }
+
+    footer {
+        max-width: 100%;
+    }
+
+    /* Gallery content for medium views */
+    #weathergallery {
+        max-width: 800px;
+        text-align: left;
+        margin: 0 auto;
+        color: #1A4761;
+    }
+
+    #gallerycontainer {
+        max-width: 800px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 0 auto;
+    }
+    /* CSS FOR THE ALTERNATING CARDS IN INDEX */
+    .cards {
+        max-width: 600px;
+        margin: .5rem auto;
+        /* border:1px solid #bbb;
+        background-color: #eee; */
+    }
+    
+    .index_card {
+      display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .index_card:nth-child(odd) img {
+        grid-column: 1;
+        grid-row: 1/7;
+    }
+    
+    .index_card:nth-child(odd) h2,.index_card:nth-child(odd) p,.index_card:nth-child(odd) h4 {
+        grid-column: 2;
+        /* grid-row: 1; */
+    }
+
+    .index_card:nth-child(even) h2,.index_card:nth-child(even) p,.index_card:nth-child(even) h4 {
+        grid-column: 1;
+        /* grid-row: 1; */
+    }
+
+    .index_card:nth-child(even) img {
+        grid-column: 2;
+        grid-row: 1/7;
+    }
+    
+    .index_card img {
+        width: 100%; 
+        height: 100%;
+        padding:0;}
+    /* .data {background-color:#000; color:#fff;} */
+    p {padding: .75rem;}
+
+}
+
+/*Media query for very big screens*/
+@media only screen and (min-width:54.5em) {
+    header {
+        background-color: #1A4761;
+    }
+
+    #header_test {
+        width: 800px;
+    }
+
+    #navigation {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    main {
+        width: 1000px;
+    }
+
+    .heroImg {
+        max-width: 1000px;
+    }
+    /* Gallery content for wide views */
+    #weathergallery {
+        max-width: 1000px;
+        text-align: left;
+        margin: 0 auto;
+        color: #1A4761;
+    }
+
+    #gallerycontainer {
+        max-width: 1000px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+}
+
+/* CSS For the pancakes add on */
+#image2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 50px 50px;
+    width: 100%;
+    margin: 16px auto;
+    /* hide it until I figure out the js */
+    display: none;
+}
+
+.img1 {
+    grid-row: 1/-1;
+    grid-column: 1/4;
+    width: 100%;
+    height: 150px;
+    z-index: 6;
+    opacity: 0.4;
+    border-radius: 50px;
+}
+
+.overlay2 {
+    grid-column: 1;
+    grid-row: 1/3;
+    z-index: 12;
+    color: #1A4761;
+    text-align: center;
+    justify-self: center;
+}
+
+.learning {
+    grid-column: 1;
+    grid-row: 3;
+    z-index: 13;
+    align-self: center;
+    justify-self: center;
+    color: #1A4761;
+}

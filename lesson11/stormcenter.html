@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Guardian</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/menu.js"></script>
+    <link rel="shortcut icon" href="images/twguardian.png" type="image/gif">
+</head>
+
+<body>
+    <header>
+        <div id="header_test">
+            <div class="logo">
+                <img src="images/twguardian.png" alt="twguardian.logo">
+            </div>
+            <div class="title-motto">
+                <h1>The Weather Guardian</h1>
+                <h3>Here to save your day</h3>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a class="active" href="#">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+    </nav>
+    <main>
+        <h1>Storm Report</h1>
+        <form method="get" action="thanks.html">
+            <!-- <form> -->
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top"> Full name*<input type="text" name="fname" required></label>
+                <label class="top"> Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top"> Email*<input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top"> Zipcode*<input type="number" name="url" placeholder="83440" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date<input type="date" name="completeDate"></label>
+                <label class="top">Storm Type<select name="subject">
+                        <!-- &#9662; This is the drop down arrow symbol code -->
+                        <option value="">Please Select</option>
+                        <option value="flood">Flash Flood</option>
+                        <option value="hail">Hail</option>
+                        <option value="hurricane">Hurricane</option>
+                        <option value="thunder">Thunderstorm</option>
+                        <option value="tornado">Tornado</option>
+                    </select></label>
+                <label class="top">Storm Severity: 1 <input type="range" name="range" min="1" max="10" step="1" list="tickmarks"> 10</label>
+                <label class="top">Storm Region<select name="subject">
+                    <!-- &#9662; This is the drop down arrow symbol code -->
+                    <option value="" selected disabled>Select Region</option>
+                    <option value="preston">Preston</option>
+                    <option value="soda">Soda Springs</option>
+                    <option value="fish">Fish Haven</option>
+                </select></label>
+            </fieldset>
+            <fieldset>
+                <legend>User in Danger</legend>
+                <div>Level</div>
+                <label class="sbs"><input type="radio" name="level" value="yes">Yes</label>
+                <label class="sbs"><input type="radio" name="level" value="maybe">Maybe</label>
+                <label class="sbs"><input type="radio" name="level" value="no">No</label>
+                <!-- <div>Software Needed</div>
+                <label class="sbs"><input type="checkbox" name="editing" value="yes">Photo Editing</label>
+                <label class="sbs"><input type="checkbox" name="code" value="yes">Coding</label>
+                <label class="sbs"><input type="checkbox" name="process" value="yes">Preprocessor</label>
+                <label class="sbs"><input type="checkbox" name="client" value="yes">FTP Client</label> -->
+                <div>Comments:</div>
+                <label class="top"><input type="textarea" name="comments"></label>
+            </fieldset>
+
+            <input type="submit" value="Submit Form" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <p class="legal">&copy; The Weather Guardian | Jonathan Gonzalez | Idaho </p>
+        <p class="highlight"><span id="lastupdated"></span></p>
+    </footer>
+
+</body>
+
+</html>
