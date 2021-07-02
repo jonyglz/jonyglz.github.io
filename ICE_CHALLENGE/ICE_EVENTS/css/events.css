@@ -1,0 +1,30 @@
+body{
+    font-family: 'Anton',sans-serif;
+}
+p{
+    font-family: 'Roboto',
+    sans-serif;
+}
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+#market{
+     border-radius: 25px;
+     background-color: #338dd9;
+     padding: 20px;  
+     color:white;
+     letter-spacing: 2px;   
+}
+#rescheduled{
+    background-color: limegreen;
+    border-radius: 25px;
+    width: 120px;
+    padding-left:7px;
+}
+#type_event{
+    background-color: rgb(194, 95, 112);
+    border-radius: 25px;
+    width: 120px;
+    padding-left:7px;
+}
