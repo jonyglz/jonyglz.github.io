@@ -8,7 +8,19 @@ window.addEventListener("load",()=>{
 window.addEventListener("load", (event)=>{
     const lu=document.querySelector("#lastupdated");
     lu.textContent = document.lastModified;
+
+    let currentdate  = new Date();
+    let pancake = document.getElementById("image2");
+    console.log(pancake);
+    if(currentdate.getDay()  !==5){
+        pancake.style.display="none";
+    }
+    else{
+        pancake.style.display="grid";
+    };
+
 });
+
 const requestURL="https://byui-cit230.github.io/weather/data/towndata.json";
 
 fetch(requestURL)

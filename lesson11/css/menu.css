@@ -406,7 +406,7 @@ form{
     width: 100%;
     margin: 16px auto;
     /* hide it until I figure out the js */
-    display: none;
+    /* display: none; */
 }
 
 .img1 {
