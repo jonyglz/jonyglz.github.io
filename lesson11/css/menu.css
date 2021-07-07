@@ -102,6 +102,40 @@ footer {
     max-width: 360px;
     padding: 10px;
 }
+.highlight, .legal{
+    margin: 0;
+    padding: 0;
+}
+#map{
+    display: none;
+}
+#footer_header{
+    margin: 0;
+}
+#address, #phone, #email{
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    width: 200px;
+    margin: 0 100px auto;
+}
+#address i, #phone i, #email i{
+    align-self: center;
+    justify-self: end;
+}
+#address p, #phone p, #email p{
+    align-self: center;
+    justify-self:start;
+    margin: 0;
+    padding: 5px;
+}
+#social{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#social p{
+    margin: 0;
+    padding: 5px;
+}
 
 /* CSS for text typography */
 h1 {
@@ -362,7 +396,44 @@ form{
     }
     /* .data {background-color:#000; color:#fff;} */
     p {padding: .75rem;}
-
+    /* CSS FOR THE FOOTER IN MEDIUM VIEWS */
+    #mapandcontact{
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+    #map{
+        display: block;
+    }
+    #footer_header{
+        margin: 0;
+    }
+    #address, #phone, #email{
+        display: grid;
+        grid-template-columns: 25px 1fr;
+        width: 200px;
+        margin: 0 auto;
+    }
+    #address i, #phone i, #email i{
+        align-self: center;
+        justify-self: end;
+    }
+    #address p, #phone p, #email p{
+        align-self: center;
+        justify-self:start;
+        margin: 0;
+        padding: 5px;
+    }
+    #social{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: 2;
+    }
+    #social p{
+        margin: 0;
+        padding: 5px;
+    }
 }
 
 /*Media query for very big screens*/

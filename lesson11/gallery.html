@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/menu.css">
     <script src="js/menu.js"></script>
     <link rel="shortcut icon" href="images/twguardian.png" type="image/gif">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 
 <body>
@@ -49,8 +50,26 @@
         </div>
     </main>
     <footer>
-        <p class="legal">&copy; The Weather Guardian | Jonathan Gonzalez | Idaho </p>
-        <p class="highlight"><span id="lastupdated"></span></p>
+        <div id="mapandcontact">
+            <section id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628256915!2d-111.91534455050368!3d42.09980531199333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263!5e0!3m2!1ses-419!2sus!4v1625352616881!5m2!1ses-419!2sus" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+            <section>
+                <h2 id="footer_header">Contact Information</h2>
+                <div id="address"><i class="fas fa-map-marker-alt"></i> <p>538 S 2nd W</p> </div>
+                <div id="phone"><i class="fas fa-phone-alt"></i> <p>(555) 123-4567</p> </div>
+                <div id="email"><i class="fas fa-envelope"></i> <p>admin@wguardian.com</p> </div>
+            </section>
+            <section id="social">
+                <p><i class="fab fa-facebook"></i></p>
+                <p><i class="fab fa-instagram"></i></p>
+                <p><i class="fab fa-twitter"></i></p>
+            </section>
+        </div>
+        <div>
+            <p class="legal">&copy; The Weather Guardian | Jonathan Gonzalez | Idaho </p>
+            <p class="highlight"><span id="lastupdated"></span></p>
+        </div>
     </footer>
 
 </body>

@@ -1,3 +1,5 @@
+const day = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 window.addEventListener("load",()=>{
     const hambutton = document.querySelector(".ham");
     const mainnav = document.querySelector("#navigation");
@@ -6,9 +8,17 @@ window.addEventListener("load",()=>{
 
 });
 window.addEventListener("load", (event)=>{
+    // CODE FOR THE FOOTER DATE IN THE FORMAT "DAY, MONTH YEAR"
     const lu=document.querySelector("#lastupdated");
-    lu.textContent = document.lastModified;
 
+    let currentDay = new Date().getDay();
+    let currentMonth = new Date().getMonth();
+    let currentYear = new Date().getFullYear();
+
+    lu.textContent="Last updated: "+day[currentDay]+" "+new Date().getDate()+", "+month[currentMonth]+" "+currentYear;
+    // lu.textContent = document.lastModified;
+
+    // CODE FOR THE PANCAKE ADD
     let currentdate  = new Date();
     let pancake = document.getElementById("image2");
     console.log(pancake);
