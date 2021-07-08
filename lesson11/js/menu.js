@@ -103,7 +103,7 @@ fetch(requestURL)
                 console.log(w);
                 let x = w.split(" ");
                 console.log(x);
-                let y = new Date(x[0]);
+                let y = new Date(x);
                 console.log(y);
                 let z = y.getDay();
                 console.log(z);
