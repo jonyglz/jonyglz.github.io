@@ -21,7 +21,7 @@ window.addEventListener("load", (event)=>{
     // CODE FOR THE PANCAKE ADD
     let currentdate  = new Date();
     let pancake = document.getElementById("image2");
-    console.log(pancake);
+    // console.log(pancake);
     if(currentdate.getDay()  !==5){
         pancake.style.display="none";
     }
@@ -99,11 +99,20 @@ fetch(requestURL)
 
             for (let i=0; i<only18hourlist.length; i++){
 
+                let w = only18hourlist[i].dt_txt;
+                console.log(w);
+                let x = w.split(" ");
+                console.log(x);
+                let y = new Date(x[0]);
+                console.log(y);
+                let z = y.getDay();
+                console.log(z);
+
                 let currentday = i+1;
                 document.getElementById("icon"+currentday).setAttribute("src", "https://openweathermap.org/img/w/"+only18hourlist[i].weather[0].icon+".png");
                 document.getElementById("icon"+currentday).setAttribute("alt", only18hourlist[i].weather[0].description+" "+only18hourlist[i].main.temp);
                 document.getElementById("span"+currentday).textContent = only18hourlist[i].main.temp+"°F";
-
+                document.getElementById("day-forecast"+currentday).textContent = day[z];
             }
         });
 

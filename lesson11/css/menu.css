@@ -324,7 +324,12 @@ form{
         margin: 0;
         padding: 0;
     }
-
+    #day-forecast1, #day-forecast2, #day-forecast3, #day-forecast4, #day-forecast5{
+        grid-row: 1;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
     .corn,
     .corn_image {
         display: block;
