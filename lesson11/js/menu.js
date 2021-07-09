@@ -101,7 +101,7 @@ fetch(requestURL)
 
                 let w = only18hourlist[i].dt_txt;
                 console.log(w);
-                let x = w.split(" ");
+                const x = w.split(" ");
                 console.log(x);
                 let y = new Date(x);
                 console.log(y);
