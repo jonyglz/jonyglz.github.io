@@ -277,6 +277,7 @@ form{
         width: 100%;
         height: 240px;
         z-index: 6;
+        /* object-fit: cover; */
     }
 
     .summarytxt {
@@ -318,7 +319,7 @@ form{
         max-width: 100%;
         grid-template-columns: repeat(5, 1fr);
     }
-    #span5, #span4, #span3, #span2, #span1 {
+    #span5, #span4, #span3, #span2, #span1, .soda-forecast, .fish-forecast {
         grid-row: 2;
         text-align: center;
         margin: 0;
