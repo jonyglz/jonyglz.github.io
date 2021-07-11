@@ -84,6 +84,12 @@ main h1 {
     padding: 10px;
 }
 
+/* Weather forecast small view */
+
+#unused, #five-day-forecast{
+    display: none;
+}
+
 .forecast_icons {
     display: none;
 }
@@ -278,6 +284,10 @@ form{
         height: 240px;
         z-index: 6;
         /* object-fit: cover; */
+    }
+
+    #five-day-forecast{
+        display: block;
     }
 
     .summarytxt {
