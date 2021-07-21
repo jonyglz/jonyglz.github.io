@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temple Inn & Suites</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/tis.css">
+        <script src="js/tis.js"></script>
+        <link rel="shortcut icon" href="images/tis-logo.png" type="image/gif">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+    
+<body>
+        <header>
+            <div id="header-container">
+                <div class="logo">
+                    <a href="index.html"><img id="header-logo" src="images/tis-logo.png" alt="tis-logo"></a>
+                </div>
+                <div class="title-motto">
+                    <h1>Temple Inn & Suites</h1>
+                    <h3>Enjoy a Spiritual Stay</h3>
+                </div>
+            </div>
+        </header>
+    <nav>
+        <ul id="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="pre-reservation.html">Reservation</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+    </nav>
+    <main>
+        <section id='hero-img-container'>
+            <img id="hero-img" src="https://churchofjesuschristtemples.org/assets/img/temples/san-antonio-texas-temple/san-antonio-texas-temple-322-main.jpg" alt="Hero Image">
+            <div id="reserve-container">
+                <h3>Check Availability</h3>
+                <form action="pre-reservation.html">
+                    <label id="check-in"> Check In: <input type="date" name="check-in" id="date-check-in"></label>
+                    <label id="check-out"> Check Out: <input type="date" name="check-out" id="date-check-out"></label>
+                    <input type="submit" value="Book Now!" id="button-to-reservation">
+                </form>
+            </div>
+        </section>
+        <section id="temple-highlight">
+                <h2>San Antonio Texas Temple</h2>
+                <p>  The San Antonio Texas Temple was the fourth temple built in Texas, following the Dallas Texas Temple (1984), the Houston Texas Temple (2000), and the Lubbock Texas Temple (2002).
+
+                    The groundbreaking ceremony for the San Antonio Texas Temple was held on the same day as the groundbreaking ceremony for the Helsinki Finland Temple.
+                </p>
+                <img src="https://assets.ldscdn.org/16/d0/16d09eecd2f5ed5baa4e92d2c3e28c80b2a796f5/san_antonio_temple_lds.jpg" alt="Temple Image">
+        </section>
+    </main>
+    <footer>
+        <div id="mapandcontact">
+            <section id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102151.50364291196!2d-77.10257346781997!3d38.9843342598673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cbb76a24022d%3A0x26b279f76a2bcd0d!2sBethesda%2C%20Maryland!5e0!3m2!1ses-419!2sus!4v1626750778394!5m2!1ses-419!2sus" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+            <section>
+                <h2 id="footer_header">Contact Information</h2>
+                <div id="address"><i class="fas fa-map-marker-alt"></i> <p>Bethesda, MD 20814</p> </div>
+                <div id="phone"><i class="fas fa-phone-alt"></i> <p>(555) 123-4567</p> </div>
+                <div id="email"><i class="fas fa-envelope"></i> <p>admin@tis.com</p> </div>
+            </section>
+            <section id="social">
+                <p><i class="fab fa-facebook"></i></p>
+                <p><i class="fab fa-instagram"></i></p>
+                <p><i class="fab fa-twitter"></i></p>
+            </section>
+        </div>
+        <div>
+            <p class="legal">&copy; Temple Inn & Suites | Jonathan Gonzalez </p>
+            <p class="highlight"><span id="lastupdated"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

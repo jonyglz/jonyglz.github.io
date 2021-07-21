@@ -1,0 +1,916 @@
+/* Font  */
+body{
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+}
+
+/* Small phone view */
+nav {
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: #50778b;
+    color: white;
+    padding: 0;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+    margin: 0;
+    transition: 300ms;
+}
+
+#navigation li:first-child {
+    display: block;
+}
+
+#navigation li {
+    display: none;
+}
+
+#navigation a {
+    display: block;
+    padding: .75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    margin: 0px 10px;
+}
+#navigation a::before{
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #031D44;
+    width: 0%;
+    bottom: 10px;
+}
+#navigation a:hover::before{
+    width:80px
+}
+
+/* #navigation a:hover {
+    color: #100509;
+    background-color: #F5B82E;
+} */
+
+#navigation a.active {
+    background-color: #031d44;
+    color: white;
+}
+
+#navigation.responsive li {
+    display: block;
+}
+
+/* CSS For the header */
+#header-container {
+    text-align: center;
+    /* background-image: url("https://assets.ldscdn.org/d1/38/d138982902229278d81e9a64a3348f31d916b610/san_antonio_temple_lds.jpg");
+    background-color: #cccccc;
+    /* height: 500px; */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-color: #50858b;
+    color: white;
+    margin: 0 auto;
+    max-width: 360px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+#header-logo {
+    max-width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#title-motto h3 {
+    display: none;
+}
+
+main{
+    width: 360px;
+    margin: 0 auto;
+}
+#hero-img-container{
+    max-width: 360px;
+}
+#hero-img {
+    width: 100%;
+}
+#reserve-container{
+    background-color: #ccdbda ;
+}
+#reserve-container h3{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+#reserve-container form{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0;
+}
+#check-out, #check-in{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+/* css for ammenities */
+
+#reception-invitation-container {
+    background-color: #ccdbda;
+}
+#reception-invitation-container h3{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+#reception-invitation-container form{
+    display:grid;
+    grid-template-rows: 1fr;
+    margin: 0;
+}
+
+#temple-highlight img{
+    width: 360px;
+}
+#temple-highlight h2{
+    margin: 2%;
+}
+#temple-highlight p{
+    margin: 2%;
+}
+
+/* css for services gastronomy etc. */
+#gastronomy-highlight img, #banquet-highlight img{
+    width: 360px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#gastronomy-highlight h2, #banquet-highlight h2{
+    margin: 2%;
+}
+#gastronomy-highlight p, #banquet-highlight p{
+    margin: 2%;
+}
+
+#spa-highlight img, #venue-highlight img{
+    width: 360px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#spa-highlight h2, #venue-highlight h2{
+    margin: 2%;
+}
+#spa-highlight p, #venue-highlight p{
+    margin: 2%;
+}
+
+#fitness-highlight img, #transportation-highlight img{
+    width: 360px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#fitness-highlight h2, #transportation-highlight h2{
+    margin: 2%;
+}
+#fitness-highlight p, #transportation-highlight p{
+    margin: 2%;
+}
+
+/* CSS for the footer */
+footer {
+    text-align: center;
+    background-color: #50858b;
+    color: white;
+    margin: 0 auto;
+    max-width: 360px;
+    padding: 10px;
+}
+.highlight, .legal{
+    margin: 0;
+    padding: 0;
+}
+#map{
+    display: none;
+}
+#footer_header{
+    margin: 0;
+}
+#address, #phone, #email{
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    width: 200px;
+    margin: 0 100px auto;
+}
+#address i, #phone i, #email i{
+    align-self: center;
+    justify-self: end;
+}
+#address p, #phone p, #email p{
+    align-self: center;
+    justify-self:start;
+    margin: 0;
+    padding: 5px;
+}
+#social{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#social p{
+    margin: 0;
+    padding: 5px;
+}
+
+/* Gallery content for small views */
+/* #weathergallery {
+    max-width: 360px;
+    text-align: left;
+    margin: 0 auto;
+    color: #1A4761;
+}
+
+#gallerycontainer {
+    max-width: 360px;
+    display: grid;
+    grid-template-columns: 360px;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#gallerycontainer figure {
+    margin: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.galleryphoto {
+    background-color: lightgray;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+}
+
+.galleryphoto:hover {
+    box-shadow: 0 0 50px #333;
+} */
+
+/* CSS FOR temple CARDS IN SMALL VIEW */
+.index_card{
+    width: 100%;
+    background-color:#ccdbda;
+    text-align: center;
+    margin: 2% auto;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px gray;
+    cursor: pointer;
+}
+.index_card img{
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+.index_card h4{
+    margin: 2%;
+    padding-left: 2%;
+    color: white;
+    text-align: left;
+    background-color: #031D44;
+    width: 40%;
+}
+.index_card h2{
+    margin: 2%;
+    padding-left: 2%;
+    text-align: left;
+}
+.index_card div{
+    height: 120px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: repeat(4, 30px);
+}
+.index_card div i{
+    grid-template-columns: 1;
+    align-self: center;
+    justify-self: end;
+}
+.index_card p{
+    margin: 2%;
+    padding-left: 2%;
+    text-align: left;
+}
+.index_card p:nth-child(7){
+    padding-bottom: 2%;
+}
+
+/* css for the room cards */
+#room-choices-header{
+    margin: 2%;
+}
+.room-image img{
+    width: 100%;
+    height: auto;
+    width:100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.room-card{
+    margin: 2% auto;
+    width: 100%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 200px 80px 100px;
+    box-shadow:  2px 2px 2px lightgray;
+}
+.cardDetails{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    background-color: #f4f9ff;
+    border-radius: 10px 10px;
+}
+.cardInfo{
+    text-align: left;
+}
+.cardButton button{
+    justify-self: center;
+    align-self: center;
+    margin: 0 auto;
+    text-align: center;
+    padding-top:5px;
+    border: 1px solid #0D53D5
+}
+.cardButton button:hover{
+    opacity:.7;
+    border: 1px solid #0D53D5;
+    background-color:#f4f9ff;
+    color: black;
+}
+.cardHeader{
+    grid-row: 2/3;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.cardHeader h3{
+    margin: 0;
+    padding: 2%;
+    grid-column: 1/3;
+}
+.cardHeader i{
+    grid-column: 1;
+    align-self: center;
+    justify-self: end;
+}
+.cardHeader p{
+    color:gray;
+    font-size: 15px;
+    grid-column: 2;
+    margin: 0;
+    padding-left: 2%;
+}
+.cardPrice{
+    margin: 2%;
+}
+.cardReview{
+    padding-top: 2%;
+    margin: 2%;
+    display: grid;
+    grid-template-columns: repeat(5, .5fr);
+}
+
+.cardReview .star{
+    color: lightgray;
+}
+.cardReview .yellowStar{
+    color: rgb(255, 197, 5);
+    font-weight: bolder;
+    /* width: 10%; */
+}
+
+.reviews{
+    color: gray;
+    grid-column: 1/6;
+}
+.cardButton form{
+    padding-top: 4%;
+    margin: 2%
+}
+.room-card button{
+    background-color: #0D53D5;
+    width: 80%;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+.per_person{
+    color: gray;
+}
+
+/* CSS for the form */
+::placeholder{
+    color: gray;
+    opacity: .5;
+}
+#reservation-form-h1{
+    margin: 2%;
+}
+#reservation-form-container{
+    margin: 2%;
+}
+#form-image{
+    justify-self: center;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+#reservation-form-container fieldset{
+    margin: 2%;
+}
+#personal-details{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#personal-details label{
+    margin: 2%;
+}
+#room-details{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+#room-details label{
+    margin: 2%;
+
+}
+
+/* Contact us css */
+#description-label-contact{
+    margin: 2%;
+}
+
+
+/* Media query for medium views */
+@media only screen and (min-width: 34.5em) {
+    #header-container {
+        max-width: 100%;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .logo {
+        align-self: center;
+    }
+    #header-logo{
+        width: 70px;
+        height: 70px;
+    }
+
+    .title-motto {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .title-motto h1 {
+        margin: 0;
+    }
+
+    .title-motto h3 {
+        display: block;
+        margin: 0;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    #navigation {
+        grid-template-columns: repeat(5, auto);
+    }
+
+    #navigation li {
+        display: block;
+        /*change state in small view*/
+
+    }
+
+    #navigation a {
+        text-align: center;
+    }
+
+    #navigation li:first-child {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #hero-img-container {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 80px 80px 80px;
+    }
+
+    #hero-img {
+        display: block;
+        grid-row: 1/-1;
+        grid-column: 1/4;
+        width: 100%;
+        height: 240px;
+        z-index: 6;
+        object-fit: cover;
+    }
+    #reserve-container{
+        width: 80%;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        z-index: 13;
+        align-self: center;
+        justify-self: center;
+        background-color: whitesmoke;
+        border-radius: 30px;
+        text-align: center;
+        margin: 0 30px;
+        opacity: .7;
+    }
+    #reserve-container h3{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    #reserve-container form{
+        display: block;
+        margin-bottom: 2%;
+    }
+    #check-in{
+        margin-right: 2%;
+    }
+    #button-to-reservation{
+        margin-top: 2%;
+    }
+
+    /* css for reception invitation container */
+    #reception-invitation-container{
+        width: 80%;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        z-index: 13;
+        align-self: center;
+        justify-self: center;
+        background-color: whitesmoke;
+        border-radius: 30px;
+        text-align: center;
+        margin: 0 30px;
+        opacity: .7;
+    }
+    #reception-invitation-container h3{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    #reception-invitation-container form{
+        display: block;
+        margin-bottom: 2%;
+    }
+    #check-in{
+        margin-right: 2%;
+    }
+    #button-to-reservation{
+        margin-top: 2%;
+    }
+
+    /* Temple highlight */
+
+    #temple-highlight{
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 50px 200px;
+        background-color:#ccdbda ;
+        border-radius: 30px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #temple-highlight h2{
+        margin-left: 2%
+    }
+    #temple-highlight p{
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 85%;
+    }
+    #temple-highlight img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-row: 1/3;
+        grid-column: 2;
+        border-radius: 0 30px 30px 0;
+    }
+
+    /* Gastronomy, spa, fitness */
+
+    #gastronomy-highlight, #banquet-highlight{
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 125px 125px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #gastronomy-highlight h2, #banquet-highlight h2{
+        margin-left: 2%;
+        text-align: left;
+        padding-top: 80px;
+    }
+    #gastronomy-highlight p, #banquet-highlight p{
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 85%;
+    }
+    #gastronomy-highlight img, #banquet-highlight img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-row: 1/3;
+        grid-column: 2;
+        margin: 0;
+    }
+
+    #spa-highlight, #venue-highlight{
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 125px 125px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #spa-highlight h2, #venue-highlight h2{
+        margin-left: 2%;
+        text-align: left;
+        padding-top: 80px;
+        grid-column: 2;
+    }
+    #spa-highlight p, #venue-highlight p{
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 85%;
+    }
+    #spa-highlight img, #venue-highlight img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-row: 1/3;
+        grid-column: 1;
+        margin: 0;
+    }
+
+    #fitness-highlight, #transportation-highlight{
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 125px 125px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #fitness-highlight h2, #transportation-highlight h2{
+        margin-left: 2%;
+        text-align: left;
+        padding-top: 80px;
+    }
+    #fitness-highlight p, #transportation-highlight p{
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 85%;
+    }
+    #fitness-highlight img, #transportation-highlight img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-row: 1/3;
+        grid-column: 2;
+        margin: 0;
+    }
+
+    /* css medium width temple rooms */
+    #rooms-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+        margin:2%;
+        margin-bottom: 4%;
+    }
+
+    /* .wicon {
+        width: 80px;
+        height: 80px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .forecast_icons {
+        display: block;
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    #span5, #span4, #span3, #span2, #span1, .soda-forecast, .fish-forecast {
+        grid-row: 2;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    #day-forecast1, #day-forecast2, #day-forecast3, #day-forecast4, #day-forecast5{
+        grid-row: 1;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    } */
+
+    footer {
+        max-width: 100%;
+    }
+
+    /* Gallery content for medium views */
+    /* #weathergallery {
+        max-width: 800px;
+        text-align: left;
+        margin: 0 auto;
+        color: #1A4761;
+    }
+
+    #gallerycontainer {
+        max-width: 800px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 0 auto;
+    } */
+
+    /* CSS FOR THE temple CARDS */
+    .cards {
+        max-width: 600px;
+        /* max-width: 100%; */
+        margin: 2% auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 2%;
+    }
+    .index_card h4{
+        width: 50%;
+    }
+    .index_card div p{
+        font-size: 80%;
+    }
+    
+    /* CSS FOR THE FOOTER IN MEDIUM VIEWS */
+    #mapandcontact{
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+    #map{
+        display: block;
+    }
+    #footer_header{
+        margin: 0;
+    }
+    #address, #phone, #email{
+        display: grid;
+        grid-template-columns: 25px 1fr;
+        width: 200px;
+        margin: 0 auto;
+    }
+    #address i, #phone i, #email i{
+        align-self: center;
+        justify-self: end;
+    }
+    #address p, #phone p, #email p{
+        align-self: center;
+        justify-self:start;
+        margin: 0;
+        padding: 5px;
+    }
+    #social{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: 2;
+    }
+    #social p{
+        margin: 0;
+        padding: 5px;
+    }
+
+    /* css for the form in medium views */
+    #reservation-form-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #form-image{
+        justify-self: center;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/*Media query for very big screens*/
+@media only screen and (min-width:54.5em) {
+    header {
+        background-color: #50858b;
+    }
+
+    #header-container {
+        width: 800px;
+    }
+
+    #navigation {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+
+    #hero-img-container {
+        width: 100%;
+    }
+    #temple-highlight p{
+        font-size: 100%;
+    }
+    /* Gallery content for wide views */
+    #weathergallery {
+        max-width: 1000px;
+        text-align: left;
+        margin: 0 auto;
+        color: #1A4761;
+    }
+
+    #gallerycontainer {
+        max-width: 1000px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+/* CSS FOR INDEX CARDS IN BIG SCREEN */
+    .cards {
+        width: 1050px;
+        margin-top: 2%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* border:1px solid #bbb;
+        background-color: #eee; */
+    }
+    .index_card{
+        width: 350px;
+        align-self: center;
+    }
+    .index_card div p{
+        font-size: 95%;
+    }
+
+    /* css for rooms options wide */
+    #rooms-container{
+        max-width: 1200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2%;
+        margin-top:2%;
+        margin-left: 10%;
+        margin-right: 10%;
+        /* margin-bottom: 4%; */
+    }
+
+    /* css for form in big views */
+    #reservation-form-h1{
+        margin-left: 12%;
+    }
+    #reservation-form-container{
+        margin: 2% auto;
+        max-width: 1000px;
+    }
+}
+

@@ -1,0 +1,79 @@
+[
+    {
+        "name":"Idaho Falls Temple",
+        "templeId":"8th dedicated temple",
+        "phone":"(208)-522-7559",
+        "address1":"1000 Memorial Dr.",
+        "city":"Idaho Falls",
+        "state":"ID",
+        "zip":"83402",
+        "services":["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
+        "history":{
+            "announced":"March 3, 1937",
+            "groundbreaking":"December 19, 1939",
+            "dedicated":"September 23-25, 1945"
+        },
+        "imageurl":"https://assets.ldscdn.org/90/a0/90a0c0d599f94a2d955930e90fa95b9aa85a5004/idaho_falls_idaho_temple.png",
+        "presidents":[
+            "David Smith","William Killpack","Parley Arave","Cecil Hart","Delbert Groberg","Devere Harris","Rheim Jones","Milton Romrell","C. Gayle Williams","Preston Brimhall","Glen Nelson","Mark Ricks","Newell Richardson","John Groberg","Larry Stoddard","Gerald Mead","Donald Archibald","Doyle Batt"
+        ]
+    },
+
+    {
+        "name":"Rexburg Idaho Temple",
+        "templeId":"125th dedicated temple",
+        "phone":"(208)-656-0880",
+        "address1":"750 S 2nd E",
+        "city":"Rexburg",
+        "state":"ID",
+        "zip":"83440",
+        "services":["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
+        "history":{
+            "announced":"December 12, 2003",
+            "groundbreaking":"July 30, 2005",
+            "dedicated":"February 10, 2008"
+        },
+        "imageurl":"https://assets.ldscdn.org/29/8a/298a8b01fbc736923e83e7c748e60abcad8511c9/rexburg_idaho_temple.jpeg",
+        "presidents":[
+            "Val Christensen","Clair Thueson","Philip Wightman","Fenton Broadhead","Max Checketts"
+        ]
+    } ,   
+    {
+        "name":"Mexico City Mexico Temple",
+        "templeId":"26th dedicated temple",
+        "phone":"(52) 55-5003-3700",
+        "address1":"Ave 510 #90, Aragon",
+        "city":"Mexico City",
+        "state":"CDMX",
+        "zip":"07950",
+        "services":["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
+        "history":{
+            "announced":"April 3, 1976",
+            "groundbreaking":"November 25, 1979",
+            "dedicated":"December 2, 1983"
+        },
+        "imageurl":"https://assets.ldscdn.org/05/ba/05baca7fd19cb67cd1379e82b1d38ef996ec2eb2/mexico_city_temple_lds.jpg",
+        "presidents":["Marco A. Cardenas", "Lester F. Johnson", "Manuel Gonzalez Calvo", "Santiago Mejia Mora", "Ned B. Rouech", "Jerald L. Taylor", "Roy H. King Jr.", "Ted E. Brewerton", "Agricol L. Herrera", "Waldo P. Call", "Erasmo Flores de Iimbert", "Harold Brown"
+        ]
+    },
+
+    {
+        "name":"San Antonio Texas Temple",
+        "templeId":"120th dedicated temple",
+        "phone":"(210) 538-0034",
+        "address1":"20080 Stone Oak Pkwy",
+        "city":"San Antonio",
+        "state":"TX",
+        "zip":78258,
+        "services":["Clothing rental available", "No cafeteria available", "No patron housing available"],
+        "history":{
+            "announced":"June 24, 2001",
+            "groundbreaking":"March 29, 2003",
+            "dedicated":"May 22, 2005"
+        },
+        "imageurl":"https://assets.ldscdn.org/16/d0/16d09eecd2f5ed5baa4e92d2c3e28c80b2a796f5/san_antonio_temple_lds.jpg",
+        "presidents":[
+            "A. Ray Otte","Marion D. Woods","Kim B. Beckstead","Larry D. Sprouse","Terry J. Orgill","Randall F. Baum"
+        ]
+    } 
+]
